@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>Example 1</title>
+		<script src = "myFile.js"><script>
+	</head>
+	
+	<body>
+		<h1> id ="title"></h1>
+		<div id ="outputContainer"></div>
+	</body>
+</html>
+
+var listTitle = "students list(alphabetical)"
+var studentArray = ["john", "bob", "amy" ];
+
+window.onload =function(){   // makes the page completely load
+
+	var myTitle = document.querySelector("#title");   // references to the element 
+	myTitle.innerHTML ="<em>" + listTitle + "</em>";
+	
+	var myContainer = document.querySelector("#outputContainer");
+	
+	studentArray.sort();
+
+	for (var i =0; i <studentArray.Length; i++) {
+	 myContainer.innerHTML += "<p>" + studentArray[i] + "</p>";
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

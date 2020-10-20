@@ -1,0 +1,90 @@
+client side form validation saves time and bandiwidth
+- fast and gives user feedback 
+- display 1 error at a time
+- <inpput> tags like email, month, time, url 
+
+html client side validation
+- requires an attribute
+- field must have input required 
+- can have pattern attribute 
+<label for = "phone"> Phone number </label> 
+<input type="tel" pattern = "^\d{3}-\d{3}-\d{4}$" id = "phone"
+or 
+<input type = "number" name "entry12" min = 2 max = 20 step 2 /> 
+
+client side validation with javascript
+presence
+value
+range
+reasonableless
+check digit
+consitency 
+
+onsubmit is executed when a form is submitted
+if false the browser will stop sending the form to the server
+<form name='exForm' method='post' action='https://t' onsubmit='return formValidation();'>
+
+for text fields 
+
+function validatePhoneNumber() {
+
+       var input = document.form1.phone.value.trim();
+       if (parseInt(input) != input) {
+            alert('Please enter a phone number, numbers only');
+            document.form1.phone.focus();
+            return false; // failed for validation
+       }   
+       return true; // passed for validation
+  } 
+
+// valdiation of text area
+
+function validateTextarea(form1)   {
+    /* Validate that the textarea named "comments" in the form named  
+    "form1" has some text. */
+
+   if (form1.comments.value.trim().length == 0) { // check length of textarea
+            alert("No input! Please enter your comments.\n");
+            form1.comments.value = "";
+            form1.comments.focus();
+            return false;
+     }
+     return true;
+ }
+
+// validate radio 
+var checked = false;  
+for (var i = 0; i < radio_num; i++)  {
+     
+     if (document.formname.radioname[i].checked)  {     
+          checked = true;
+     }
+} 
+
+// validate checkbox
+var count = 0;
+for (var i = 0; i < checkbox_num; i++) {
+     if (document.example.system_type[i].checked == true) { // true  = checked 
+          count++;
+     }
+} 
+
+// validate select
+Get the selectedIndex:
+var x = document.example.whatToDo.selectedIndex;
+if selectedIndex == -1 
+None are selected
+If the selectedIndex is NOT -1
+
+// validate select
+<select>
+     <option value="This is a value">This is the text</option>
+     <option value="This is a value" selected>This is text</option>
+</select>
+
+
+
+
+
+
+

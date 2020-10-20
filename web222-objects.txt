@@ -1,0 +1,43 @@
+
+var subject = {
+code:"",
+desc:"",
+prog: [],
+info: {}
+};
+
+var web222 = Object.create(subject);
+web222.code = 'web22';
+web222.desc = ' web '
+web222.prog = ['cpd', 'cpa];
+web222.info = {hours: 4, url: };
+
+var all = [web222]
+
+var totalHours =0;
+
+for (var i= 0; i <all.length; i++) {
+totalHours += all[i].info.hours;
+console.log(all[i]);
+};
+
+console.log('total hours is' + totalHours);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

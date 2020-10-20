@@ -1,0 +1,55 @@
+HTML - 17 MARKS
+CSS - 13 MARKS
+JS/DOM - 30 MARKS
+
+WEB222 EXAM 
+
+HTML -----------------------
+-rowspan/colspan tables
+- nested list
+
+FROM CREATION/VALIDATION
+-check box 
+- radio
+- select(multiple)
+- submit/rest
+
+<head> 
+<title> <script> <meta>
+</head>
+----------------------
+CSS--------------------
+- box model(margin, border, padding, content)
+- css font styles 
+- selector/grouping
+- a::
+- css rounded-corners (border radius)
+---------------------------
+JAVASCRIPTP----------------
+- (object literal) make a function to create different types of object - object.create
+- this (this keyword refers to the object it belongs to)
+- function closure (function inside a function)
+- review assignment1
+- 
+
+---------------------------
+DOM------------------------
+- review assignment 4
+- set, get attribute
+- query selectors getElementbyID
+- innerHTML property
+- Validation 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+<!--
+    Student Name: Tashi Tsering
+    student # 114763170
+    date: December 5, 2018
+    ttsering11@myseneca.ca -->
+
+    <!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <title>Tsering</title>
+            <script src="js/info.js"></script>
+            <link rel="stylesheet" type="text/css" href ="css/normalize.css">     
+            <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        </head>
+        <body>
+                <div>
+                <header>
+                        <img src="logo.png" style="width:4em; height:4em;" alt="logo">
+                    <h2>Assignment 6  </h2> 
+                </header>
+                </div>
+                <nav class= "navBar">
+                    <a href="honesty.html">Honesty</a>
+                    <a href="info.html" >Register</a>
+                </nav>
+                <section id="txtHonesty">
+                <h4>Please fill up the following form to be registered into our site </h4>
+                <div id = "regForm">
+                    <form name="signup" method="post" action="https://httpbin.org/post" onsubmit="return valSignup(this);">
+                       
+                        First name:<br/>
+                        <input type="text" name="first_name"/>
+                        <br/>
+                       
+                        Last name:<br/>
+                        <input type="text" name="last_name"/>
+                        <br/>
+                       
+                        Password:<br/>
+                        <input type="password" name="usr_pwd"/>
+                        <br/>
+                       
+                        Username:<br/>
+                        <input type="text" name="username"/>
+                        <br/>
+                       
+                        Education level:<br/>
+                        <select name="edu_lvl" required>
+                            <option value="">- select -</option>
+                            <option value="tech_diploma">Technical Diploma</option>
+                            <option value="college_diploma">College Diploma</option>
+                            <option value="bachelors_degree">Bachelor's Degree</option>
+                            <option value="masters_degree">Master's Degree</option>
+                            <option value="others">Others</option>
+                        </select>
+                        <br/>
+                        Education status:<br/>
+                        <input type="radio" name="edu_status" value="graduated" required/>Graduated<br/>
+                        <input type="radio" name="edu_status" value="current_enrolled"/>Current enrolled<br/>
+                        <input type="radio" name="edu_status" value="dnc"/>Did not graduate<br/>
+                       
+                        Email:<br/>
+                        <input type="email" name="email_addr" required/>
+                        <br/>
+                        
+                        Age:<br/>
+                        <input type="number" name="age" min="18" max="60" required/>
+                        <br/>
+                        <input type="submit" value="Submit"/>
+                        <input type="reset" name="Reset"/>
+                    </form>
+                </div>
+            </section>
+       
+    <aside id = "sidePanel">
+        <h4>ERROR MESSAGE AREA</h4>
+        <div id = "side_panel">           
+        </div>
+    </aside>    
+            <footer>
+                <div>
+                    &copy; 2018 Tashi Tsering
+                </div>
+            </footer>
+        </body>
+    </html>
+    
+    
+    

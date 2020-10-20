@@ -1,0 +1,107 @@
+/******************************************************************** 
+I declare that my assignment is wholly my own work in accordance with
+Seneca Academic Policy. No part of this assignment has been copied 
+manually or electronically from any other source (including web sites)
+except for the information supplied by the WEB222 instructors and / 
+or made available in this assignment for my use. I also declare that
+no part of this assignment has been distributed to other students.
+Name:  Tashi Tsering                
+Dated: 11/28/2018
+ ********************************************************************/ 
+/* styling the main container */
+
+.main-container{
+    max-width: 960px;
+    margin: 0px auto;
+   }
+   /*styling navigation of the main-container*/
+   
+   .main-container nav{
+       width: 30%;
+       float: left;
+   }
+   /* styling the main container of the page aligning it to the right*/
+   
+   .main-container .main{
+       width: 70%;
+       float: right;
+   }
+   /*styling the header of the page*/
+   .main-container header {
+       padding: 10px;
+       background-color:#eeeeee;
+       border-bottom: 1px solid #cccccc;
+       margin-bottom: 30px;
+   }
+   /*styling header(h1) which is child of the main-container*/
+   .main-container header h1 {
+       width: 70%;
+       font-size: 24px;
+       float: right;
+       text-align:right ;
+       margin-top:10px;
+   }
+   
+   
+   /*styling the footer which is child of the main-container*/
+   .main-container footer{
+       clear: both;
+       padding:20px 10px; 
+       background-color: #eeeeee; 
+       border-top: 1px solid #cccccc; 
+       font-size: 13px;
+   
+   }
+   
+   /*styling the logo of the page*/
+   #logo{
+       width: 30%; 
+       font-size:35px; 
+       font-weight: bold;
+             
+   }
+   /*styling the main logo of the page*/
+   #logo img{  
+       width: 80px;
+       vertical-align: middle;
+   }
+   
+   /*styling the navigation of the page*/
+   nav ul{
+       list-style: none;
+   } 
+   nav ul a {
+       display: block;
+       text-decoration:none;
+       padding: 5px; 
+   }
+   /*styling the main section of the page pictures with the description*/
+   div.item{
+       width: 30%; 
+       float: left;
+       margin: 8px; 
+       height: 450px; 
+   
+   }
+   div.item .description{
+       max-height:165px; 
+       overflow-y: scroll; 
+       overflow-x: hidden; 
+       margin-top: 8px;
+       margin-bottom: 9px; 
+   
+   }
+   /*Styling links of each items*/
+   div.item a {
+       display: block;
+       text-align : center;
+       background-color : #555555;
+       color : #eeeeee;
+       text-decoration : none;
+       padding : 5px;
+   
+   }
+   /*Styling the class picture which is located inside the image*/
+   img.picture{
+       width:100%;
+   }
